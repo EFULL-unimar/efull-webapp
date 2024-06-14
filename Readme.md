@@ -14,7 +14,8 @@ Utilizamos metodologias ágeis para desenvolver o projeto, permitindo uma adapta
 - **Frontend**: Vue 3
 - **Ferramenta de Build**: Vite
 - **API de Mapas**: Integramos uma API de mapas que permite a criação de rotas, rastreamento em tempo real e outras funcionalidades essenciais para o gerenciamento das entregas.
-- **Gerenciamento de Estado**: Pinia
+- **Integração do Backend**: Axios
+- **API Própria**: Através do C#, EF CORE E ASP.NET criamos uma api própria para o projeto.
 - **Controle de Versão**: Git
 
 ## Desenvolvimento e Implementação
@@ -30,17 +31,18 @@ Nosso desenvolvimento seguiu as seguintes etapas:
 Durante o desenvolvimento, enfrentamos vários desafios:
 - **Integração da API de Mapas**: Foi necessário realizar várias pesquisas e ajustes para integrar corretamente a API.
 - **Otimização para Diferentes Dispositivos**: Garantir que o sistema funcione eficientemente em diversos dispositivos exigiu muitos testes e ajustes.
+- **TEMPO**: Gerenciar nosso tempo foi o maior desafio.
 
 ### Resultados Obtidos
 Até o momento, conseguimos:
-- Implementar com sucesso o rastreamento em tempo real.
-- Criar rotas otimizadas.
-- Melhorar significativamente a eficiência das entregas.
+- Cadastrar usuários.  
+- Autenticar login.  
+- Criar rotas em um mapa.  
+- Relacionar o banco de dados junto com o site.  
 
-## Configuração e Uso do Projeto
 
 ### Requisitos do Sistema
-- Node.js
+- Vue.js
 - npm
 
 ### Configuração do Ambiente de Desenvolvimento
@@ -58,7 +60,6 @@ Até o momento, conseguimos:
     ```sh
     npm run dev
 
-4. **Compile e Minifique para Produção:**
-    ```sh
-    npm run build
+4. **Abrindo a API própria**
+   Abra o arquivo csproj dentro da pasta backend e rode a api junto com o swagger.
 
