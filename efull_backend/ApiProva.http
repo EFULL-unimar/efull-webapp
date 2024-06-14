@@ -1,0 +1,6 @@
+@ApiProva_HostAddress = http://localhost:5101
+
+GET {{ApiProva_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

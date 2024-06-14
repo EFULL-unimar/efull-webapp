@@ -1,0 +1,153 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\chris\\source\\repos\\api2024\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2E9747B-1544-4DFC-B0B7-49630D17084C}|ApiProva.csproj|c:\\users\\chris\\source\\repos\\api2024\\controllers\\usuarioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2E9747B-1544-4DFC-B0B7-49630D17084C}|ApiProva.csproj|solutionrelative:controllers\\usuarioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2E9747B-1544-4DFC-B0B7-49630D17084C}|ApiProva.csproj|C:\\Users\\chris\\source\\repos\\api2024\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2E9747B-1544-4DFC-B0B7-49630D17084C}|ApiProva.csproj|solutionrelative:models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2E9747B-1544-4DFC-B0B7-49630D17084C}|ApiProva.csproj|C:\\Users\\chris\\source\\repos\\api2024\\dto\\usuariodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2E9747B-1544-4DFC-B0B7-49630D17084C}|ApiProva.csproj|solutionrelative:dto\\usuariodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2E9747B-1544-4DFC-B0B7-49630D17084C}|ApiProva.csproj|C:\\Users\\chris\\source\\repos\\api2024\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2E9747B-1544-4DFC-B0B7-49630D17084C}|ApiProva.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2E9747B-1544-4DFC-B0B7-49630D17084C}|ApiProva.csproj|C:\\Users\\chris\\source\\repos\\api2024\\migrations\\20240529202812_trycorsexcpetions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2E9747B-1544-4DFC-B0B7-49630D17084C}|ApiProva.csproj|solutionrelative:migrations\\20240529202812_trycorsexcpetions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2E9747B-1544-4DFC-B0B7-49630D17084C}|ApiProva.csproj|C:\\Users\\chris\\source\\repos\\api2024\\migrations\\20240529201808_secondeds.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2E9747B-1544-4DFC-B0B7-49630D17084C}|ApiProva.csproj|solutionrelative:migrations\\20240529201808_secondeds.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2E9747B-1544-4DFC-B0B7-49630D17084C}|ApiProva.csproj|C:\\Users\\chris\\source\\repos\\api2024\\Migrations\\20240530224521_chris.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2E9747B-1544-4DFC-B0B7-49630D17084C}|ApiProva.csproj|solutionrelative:Migrations\\20240530224521_chris.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2E9747B-1544-4DFC-B0B7-49630D17084C}|ApiProva.csproj|C:\\Users\\chris\\source\\repos\\api2024\\Migrations\\20240603224157_Chris_2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2E9747B-1544-4DFC-B0B7-49630D17084C}|ApiProva.csproj|solutionrelative:Migrations\\20240603224157_Chris_2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "20240603224157_Chris_2.cs",
+              "DocumentMoniker": "C:\\Users\\chris\\source\\repos\\api2024\\Migrations\\20240603224157_Chris_2.cs",
+              "RelativeDocumentMoniker": "Migrations\\20240603224157_Chris_2.cs",
+              "ToolTip": "C:\\Users\\chris\\source\\repos\\api2024\\Migrations\\20240603224157_Chris_2.cs",
+              "RelativeToolTip": "Migrations\\20240603224157_Chris_2.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-03T22:41:57.742Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UsuariosController.cs",
+              "DocumentMoniker": "C:\\Users\\chris\\source\\repos\\api2024\\Controllers\\UsuariosController.cs",
+              "RelativeDocumentMoniker": "Controllers\\UsuariosController.cs",
+              "ToolTip": "C:\\Users\\chris\\source\\repos\\api2024\\Controllers\\UsuariosController.cs",
+              "RelativeToolTip": "Controllers\\UsuariosController.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAADwvxgAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-03T22:35:13.842Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UsuarioDTO.cs",
+              "DocumentMoniker": "C:\\Users\\chris\\source\\repos\\api2024\\DTO\\UsuarioDTO.cs",
+              "RelativeDocumentMoniker": "DTO\\UsuarioDTO.cs",
+              "ToolTip": "C:\\Users\\chris\\source\\repos\\api2024\\DTO\\UsuarioDTO.cs",
+              "RelativeToolTip": "DTO\\UsuarioDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-03T22:34:40.936Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Usuario.cs",
+              "DocumentMoniker": "C:\\Users\\chris\\source\\repos\\api2024\\Models\\Usuario.cs",
+              "RelativeDocumentMoniker": "Models\\Usuario.cs",
+              "ToolTip": "C:\\Users\\chris\\source\\repos\\api2024\\Models\\Usuario.cs",
+              "RelativeToolTip": "Models\\Usuario.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAAwBEAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-30T22:21:57.865Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "20240529202812_tryCORSexcpetions.cs",
+              "DocumentMoniker": "C:\\Users\\chris\\source\\repos\\api2024\\Migrations\\20240529202812_tryCORSexcpetions.cs",
+              "RelativeDocumentMoniker": "Migrations\\20240529202812_tryCORSexcpetions.cs",
+              "ToolTip": "C:\\Users\\chris\\source\\repos\\api2024\\Migrations\\20240529202812_tryCORSexcpetions.cs",
+              "RelativeToolTip": "Migrations\\20240529202812_tryCORSexcpetions.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-29T20:28:12.892Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "20240529201808_secondeds.cs",
+              "DocumentMoniker": "C:\\Users\\chris\\source\\repos\\api2024\\Migrations\\20240529201808_secondeds.cs",
+              "RelativeDocumentMoniker": "Migrations\\20240529201808_secondeds.cs",
+              "ToolTip": "C:\\Users\\chris\\source\\repos\\api2024\\Migrations\\20240529201808_secondeds.cs",
+              "RelativeToolTip": "Migrations\\20240529201808_secondeds.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-29T20:18:08.225Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\chris\\source\\repos\\api2024\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\chris\\source\\repos\\api2024\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAALAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-29T20:15:39.134Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "20240530224521_chris.cs",
+              "DocumentMoniker": "C:\\Users\\chris\\source\\repos\\api2024\\Migrations\\20240530224521_chris.cs",
+              "RelativeDocumentMoniker": "Migrations\\20240530224521_chris.cs",
+              "ToolTip": "C:\\Users\\chris\\source\\repos\\api2024\\Migrations\\20240530224521_chris.cs",
+              "RelativeToolTip": "Migrations\\20240530224521_chris.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-30T22:45:21.367Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
