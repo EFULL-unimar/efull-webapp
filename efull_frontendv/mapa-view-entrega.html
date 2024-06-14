@@ -1,0 +1,170 @@
+<html lang="pt-br" class=""><head>
+
+    <meta charset="UTF-8">
+    <title>Efull</title>
+  
+  <link rel="stylesheet" href="https://api.tomtom.com/maps-sdk-for-web/cdn/6.x/6.25.1/maps/maps.css">
+  <link rel="stylesheet" href="https://api.tomtom.com/maps-sdk-for-web/6.x/6.25.1//examples/pages/examples/assets/ui-library/index.css">
+  <link rel="stylesheet" href="https://api.tomtom.com/maps-sdk-for-web/6.x/6.25.1//examples/pages/examples/assets/ui-library/icons-css/routing.css">
+  <link rel="stylesheet" href="https://api.tomtom.com/maps-sdk-for-web/cdn/plugins/SearchBox/3.2.0//SearchBox.css">
+  <script defer src="/script-view-mapa.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+  <link rel="stylesheet" href="/style.css">
+  <style>
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    font-family: Raleway;
+}
+          
+          #foldable {
+              font-size: 20px;
+              width: 320px;
+              border-radius: 20px;
+          }
+          #form {
+              margin-top: 10px;
+          }
+
+
+          .icon {
+              background-size: cover;
+              height: 30px;
+              width: 30px;
+          }
+          .tt-icon-size {
+              height: 18px !important;
+              padding: 8px;
+              width: 18px !important;
+          }
+          .icon-spacing-right {
+              margin-right: 12px;
+              margin-top: 22px;
+          }
+          .icon-spacing-left {
+              margin-left: 12px;
+              margin-top: 24px;
+          }
+          .tt-search-box-input {
+              width: calc(100% - 25px) !important;
+          }
+          .searchbox-container {
+              display: flex;
+          }
+  
+          .searchbox-container > .tt-search-box {
+              flex: 1;
+              padding-right: 26px;
+          }
+          .my-location-button {
+              background-image: url("https://api.tomtom.com/maps-sdk-for-web/cdn/static/my-location.svg");
+              cursor: pointer;
+              margin-left: 7px;
+              padding: 12px;
+          }
+          .my-location-button:hover {
+              background-image: url("https://api.tomtom.com/maps-sdk-for-web/cdn/static/my-location-hover.svg");
+          }
+          .route-marker {
+              align-items: center;
+              background-color: #4a90e2;
+              border: solid 3px #2faaff;
+              border-radius: 50%;
+              display: flex;
+              height: 32px;
+              justify-content: center;
+              transition: width .1s, height .1s;
+              width: 32px;
+          }
+  
+          html {
+              height:100%;
+          }
+
+          .title{
+            font-size: 15px;
+          }
+
+          .btn-login {
+            text-decoration: none;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    background-image: linear-gradient(to right, #FF0000, #FFC000);
+    border: none;
+    color: rgb(255, 255, 255);
+    padding: 4px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: 500ms;
+}
+
+.btn-login:hover {
+    opacity: 0.5;
+}
+        </style>
+      </head>
+  
+  <body>
+    
+    <div id='map' class='map' style='width: 100%;'>
+        <div id='foldable' class='tt-overlay-panel -left-top -medium js-foldable'>
+
+            <h2><b>Informações</b></h2>
+            <p><strong>Remetente:</strong> <span id="remetente"></span></p>
+            <p><strong>Destinatário:</strong> <span id="destinatario"></span></p>
+            <p><strong>Distância:</strong> <span id="distancia"></span> km</p>
+            <p><strong>Status:</strong> <span id="status"></span></p>
+            <p class="title">Visualize aqui a sua rota</p>
+            <form id=form>
+                <div id='startSearchBox' class='searchbox-container'>
+                    <div class='tt-icon tt-icon-size icon-spacing-right -start'></div>
+                </div>
+                <div id='finishSearchBox' class='searchbox-container'>
+                    <div class='tt-icon tt-icon-size icon-spacing-right -finish'></div>
+                </div>
+            </form>
+            <a class="btn-login" href="/Entregas"><b>Voltar</b></a>
+            
+        </div>
+    </div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>    
+  <script src="https://api.tomtom.com/maps-sdk-for-web/cdn/plugins/SearchBox/3.2.0//SearchBox-web.js"></script>
+  <script src="https://api.tomtom.com/maps-sdk-for-web/cdn/6.x/6.25.1/maps/maps-web.min.js"></script>
+  <script src="https://api.tomtom.com/maps-sdk-for-web/cdn/6.x/6.25.1/services/services-web.min.js"></script>
+  <script src="https://api.tomtom.com/maps-sdk-for-web/6.x/6.25.1//examples/pages/examples/assets/js/mobile-or-tablet.js"></script>
+  <script src="https://api.tomtom.com/maps-sdk-for-web/6.x/6.25.1//examples/pages/examples/assets/js/info-hint.js"></script>
+  <script src="https://api.tomtom.com/maps-sdk-for-web/6.x/6.25.1//examples/pages/examples/assets/js/search/searchbox-enter-submit.js"></script>
+  <script src="https://api.tomtom.com/maps-sdk-for-web/6.x/6.25.1//examples/pages/examples/assets/js/foldable.js"></script>
+  <script>
+    // Obtenha o ID da entrega da URL
+    const urlParams = new URLSearchParams(window.location.search);
+    const entregaId = urlParams.get('id');
+      // Verifique se o ID da entrega está presente
+      if (entregaId) {
+        // Chamada Axios para obter informações da entrega específica
+        axios.get(`https://localhost:7044/api/Entregas/${entregaId}`)
+            .then(response => {
+                // Atualiza os elementos HTML com os dados retornados pela API
+                const entrega = response.data;
+                document.getElementById('remetente').innerText = entrega.enderecoRemetente;
+                document.getElementById('destinatario').innerText = entrega.enderecoDestinatario;
+                document.getElementById('distancia').innerText = entrega.distancia;
+                document.getElementById('status').innerText = entrega.status;
+            })
+            .catch(error => {
+                console.error('Erro ao carregar as informações da entrega:', error);
+            });
+    } else {
+        console.error('ID da entrega não encontrado na URL');
+    }
+</script>
+  </body></html>
