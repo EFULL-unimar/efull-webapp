@@ -60,6 +60,6 @@ Até o momento, conseguimos:
     ```sh
     npm run dev
 
-4. **Abrindo a API própria**
+4. **Abrindo a API própria**  
    Abra o arquivo csproj dentro da pasta backend e rode a api junto com o swagger.
 
